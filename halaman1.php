@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container1 {
-            width: 1240px;
-            height: 500px;
+        body{
+            margin: 0px ;
+        }
+        .halaman1 {
+            width: 1270px;
+            height: 588px;
             background: linear-gradient(to bottom, #BACFD7, #304E79);
         }
     </style>
 </head>
 <body>
     <div class = "halaman1" >
-    <h1>Haalloooo Duniaaa</h1>
+    <string>Haalloooo Duniaaa</string>
 </div>
 </body>
 </html>
