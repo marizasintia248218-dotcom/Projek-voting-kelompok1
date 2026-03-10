@@ -17,7 +17,9 @@
 </head>
 <body>
     <div class = "halaman1" >
-    <string>Haalloooo Duniaaa</string>
+        <div class ="header">
+            
+        </div>
 </div>
 </body>
 </html>
