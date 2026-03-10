@@ -37,9 +37,11 @@
         }
 
         .button{
+            position: fixed;
+            border: 1px solid white;
             background-color: #05142B;
             color: #ffff;
-            padding: 40px 50px;
+            padding: 40px 30px;
             border-radius: 30px;
             box-shadow: 5px solid;
             display:flex;
@@ -47,19 +49,12 @@
             text-align: center;
             justify-content: center;
             font-size:36px;
-            margin: 10px 5px;
-            transition-duration: 0.4s;
-            top: 50%;
+            margin: 20px 5px;
+            top: 23%;
             left: 50%;
-            bottom: 50px;
+            bottom: 80px;
+            transform: translateX(-50%);
         }
-
-        .button1 {border: 1px solid white;}
-        .button1:hover {
-            background-color: #73839b;
-            color: #05142B;
-        }
-
     </style>
 </head>
 <body>
@@ -68,9 +63,10 @@
             <img src="logo.png" alt="logo">
             <h6>maderazevot</h6>
             <img src="logo.osis.png" alt="logo" class="logoosis">
-            <button class= "button button1">NISN dan Kode anda salah,
-                 Silahkan coba kembali!
-            </button>
+            <div class="button">
+                <p>NISN dan Kode anda salah,
+                 Silahkan coba kembali!</p>
+            </div>
         </div>
     </div>
 </body>
