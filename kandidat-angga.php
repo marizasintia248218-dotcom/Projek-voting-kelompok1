@@ -17,6 +17,7 @@
         }
 
         .border{
+            position: fixed;
             height: 47px;
             background: rgb(255, 255, 255,  0.3);
             display: flex;
@@ -28,45 +29,32 @@
 }
  
         .logoosis{
-           height: 39px;
+           height: auto 39px;
            margin-left: auto;
            display: flex;
            justify-content: flex-end;
            align-items: center;
-           padding-right: 8px;
+           padding-right: auto 8px;
         }
 
-        .button{
-            position: fixed;
-            border: 1px solid white;
-            background-color: #05142B;
-            color: #ffff;
-            padding: 40px 30px;
-            border-radius: 30px;
-            box-shadow: 5px solid;
-            display:flex;
-            text-decoration: none;
-            text-align: center;
-            justify-content: center;
-            font-size:36px;
-            margin: 20px 5px;
-            top: 23%;
-            left: 50%;
-            bottom: 80px;
-            transform: translateX(-50%);
-            
+        .container1 {
+            background-color: #f1f1f1;
+            padding: 30px;
+            width: 50px;
+            height: 63px;
+            display: flex;
+            justify-content: flex-end;
         }
+
     </style>
 </head>
 <body>
     <div class="halaman2">
+        <div class="container1">
         <div class="border">
             <img src="logo.png" alt="logo">
             <h6>maderazevot</h6>
             <img src="logoosis.png" alt="logo" class="logoosis">
-            <div class="button">
-                <p>NISN dan Kode anda salah,
-                 Silahkan coba kembali!</p>
             </div>
         </div>
     </div>
