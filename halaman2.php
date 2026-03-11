@@ -10,7 +10,7 @@
             margin: 0px ;
             font-family: 'Poppins', sans-serif;
         }
-        .halaman2 { 
+        .halaman3 { 
             width: auto;
             height: 632px;
             background: linear-gradient(to bottom, #BACFD7, #304E79);
@@ -56,10 +56,38 @@
             transform: translateX(-50%);
             
         }
+        .container{
+           display:flex;
+        }
+
+        .sidebar{
+            width:200px;
+            background:#d9dee7;
+            padding:20px;
+            height:100vh;
+        }
+
+        .sidebar a{
+            display:block;
+            padding:10px;
+            margin:10px 0;
+            background:white;
+            text-decoration:none;
+            color:black;
+            border-radius:5px;
+        }
+
+        .logout{
+            background:#2c3e50;
+            color:white;
+            border:none;
+            padding:8px 15px;
+            border-radius:5px;
+        }
     </style>
 </head>
 <body>
-    <div class="halaman2">
+    <div class="halaman3">
         <div class="border">
             <img src="logo.png" alt="logo">
             <h6>maderazevot</h6>
@@ -68,6 +96,20 @@
                 <p>NISN dan Kode anda salah,
                  Silahkan coba kembali!</p>
             </div>
+        </div>
+        <div class="container">
+            <!-- Siedbar -->
+             <div class="siedbar">
+                <h3>Voting</h3>
+
+                <a href="#">Voting</a>
+                <a href="#">Hasil Voting </a>
+
+                <div class="User">
+                    <p>Hai Ita</P>
+                    <button class="loguot">Log Out</button>
+                </div>
+             </div>
         </div>
     </div>
 </body>
