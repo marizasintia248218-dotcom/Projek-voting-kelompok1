@@ -14,7 +14,7 @@
             width: auto;
             height: 632px;
             background: linear-gradient(to bottom, #BACFD7, #304E79);
-            image: url('bg.orang.png');
+            background-image: url('bg.orang.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

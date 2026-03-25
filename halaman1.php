@@ -1,144 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maderazevot - Kandidat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Voting Page</title>
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #BACFD7, #304E79);
+            overflow-x: hidden;
+        }
+        .halaman3 { 
+            width: 100%;
             min-height: 100vh;
+            background: linear-gradient(to bottom, #BACFD7, #304E79);
         }
 
-        .judul-halaman {
+        /* Navbar / Header */
+        .border {
+            height: 60px;
+            background: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .border h5 { margin: 0 10px; font-size: 20px; }
+        .logoosis { margin-left: auto; height: 40px; }
+
+        .container-isi {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .box {
+            width: 160px;
+            min-height: calc(100vh - 60px);
+            background: rgba(6, 19, 45, 0.42);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            gap: 20px;
+        }
+        .box-voting, .box-hasil {
+            width: 130px;
+            background-color: rgba(217, 217, 217, 0.8);
+            border-radius: 5px;
             text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        .box-voting h3, .box-hasil h3 { margin: 0; font-size: 16px; }
+        
+        .nama-user {
             color: white;
-            font-size: 40px;
-            font-weight: 700;
-            margin: 40px 0;
-            letter-spacing: 3px;
-            text-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+            margin-top: auto;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .logout {
+            width: 130px;
+            padding: 10px 0;
+            background-color: rgba(6, 19, 45, 0.95);
+            border: 1px solid #fff;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+            font-weight: 600;
         }
 
-        /* Container utama agar kartu berjejer ke samping */
+        /* Konten Utama */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .judul {
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #fff;
+            text-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Grid Kandidat */
+        .container-isi-kandidat {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Wrapper per kandidat */
         .wrapper-kandidat {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 60px; /* Jarak antar kandidat */
-            padding: 50px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
         }
 
-        /* Container per orang (Wrapper Luar) */
-       
-
-        /* Angka di atas container */
         .angka {
-            font-size: 55px;
+            color: rgba(7, 23, 57, 1);
+            font-size: 45px;
             font-weight: 700;
-            color: #071739;
-            margin: 0;
-            position: absolute;
-            top: -40px; 
-            z-index: 2;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
         }
 
-        /* Container Card (Hanya sebagai background/bingkai) */
-        .card-bg {
-            width: 257px;
-            height: 357px;
-            background: linear-gradient(to bottom, #B9CED6, #2E4461);
+        /* Kotak Border Foto */
+        .container-kandidat {
+            width: 100%;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.1); /* Transparan seperti kaca */
+            border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
-            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             display: flex;
             justify-content: center;
-            align-items: center;
-            overflow: visible; /* Penting agar elemen luar tidak terpotong */
+            align-items: flex-end; /* Agar foto menyentuh dasar kotak */
+            overflow: hidden;
+            margin-bottom: 15px;
         }
 
-        /* Foto kandidat (Tanpa border) */
         .foto-kandidat {
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
             object-fit: cover;
-            border-radius: 15px; /* Mengikuti bentuk card */
         }
 
-        /* Nama di bawah container */
         .nama-kandidat {
-            color: #071739;
-            font-size: 22px;
+            color: rgba(7, 23, 57, 1);
+            font-size: 20px;
             font-weight: 700;
             text-align: center;
-            margin-top: 15px;
-            letter-spacing: 1px;
-            width: 120%; /* Sedikit lebih lebar dari card agar terlihat standout */
+            margin: 5px 0;
+            min-height: 60px; /* Biar sejajar meski nama panjang */
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
         }
 
-        /* Tombol di bawah nama */
-        .tombol-detail {
-            margin-top: 15px;
-            width: 160px;
-            height: 45px;
-            background-color: rgba(6, 19, 45, 0.95);
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            color: #ffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Tombol Lihat Detail */
+        .tombol {
+            width: 180px;
+            padding: 10px 0;
             font-weight: 600;
+            background-color: rgba(6, 19, 45, 0.95);
+            border: 1px solid #fff;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
             cursor: pointer;
             transition: 0.3s;
-            text-decoration: none;
-            font-size: 16px;
         }
+        .tombol:hover { background-color: #1a2a4a; }
 
-        .tombol-detail:hover {
-            background-color: #fff;
-            color: #06132d;
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
-
-    <h1 class="judul-halaman">DAFTAR KANDIDAT</h1>
-
-    <div class="wrapper-kandidat">
-        
-        <div class="kandidat-item">
-            <p class="angka">01</p>
-            <div class="card-bg">
-                <img src="https://via.placeholder.com/257x357" alt="Angga" class="foto-kandidat">
-            </div>
-            <p class="nama-kandidat">ANGGA NAUFAL PRATAMA</p>
-            <div class="tombol-detail">Lihat detail</div>
+    <div class="halaman3">
+        <div class="border">
+            <img src="logo.png" alt="logo" height="40">
+            <h5>maderazevot</h5>
+            <img src="logoosis.png" alt="logoosis" class="logoosis">
         </div>
 
-        <div class="kandidat-item">
-            <p class="angka">02</p>
-            <div class="card-bg">
-                <img src="https://via.placeholder.com/257x357" alt="Hilmi" class="foto-kandidat">
+        <div class="container-isi">
+            <div class="box">
+                <div class="box-voting"><h3>Voting</h3></div>
+                <div class="box-hasil"><h3>Hasil Voting</h3></div>
+                <div class="nama-user">hi ita!</div>
+                <div class="logout">Log Out</div>
             </div>
-            <p class="nama-kandidat">HILMI HAIDAR RASYID</p>
-            <div class="tombol-detail">Lihat detail</div>
-        </div>
 
-        <div class="kandidat-item">
-            <p class="angka">03</p>
-            <div class="card-bg">
-                <img src="https://via.placeholder.com/257x357" alt="Fawwaz" class="foto-kandidat">
+            <div class="main-content">
+                <p class="judul">Daftar Kandidat</p>
+
+                <div class="container-isi-kandidat">
+                    <div class="wrapper-kandidat">
+                        <p class="angka">01</p>
+                        <div class="container-kandidat">
+                            <img src="foto.angga.png" alt="angga" class="foto-kandidat">
+                        </div>
+                        <p class="nama-kandidat">ANGGA NAUFAL<br>PRATAMA</p>
+                        <div class="tombol">Lihat detail</div>
+                    </div>
+
+                    <div class="wrapper-kandidat">
+                        <p class="angka">02</p>
+                        <div class="container-kandidat">
+                            <img src="foto.hilmi.png" alt="hilmi" class="foto-kandidat">
+                        </div>
+                        <p class="nama-kandidat">HLMI HAIDAR<br>RASYID</p>
+                        <div class="tombol">Lihat detail</div>
+                    </div>
+
+                    <div class="wrapper-kandidat">
+                        <p class="angka">03</p>
+                        <div class="container-kandidat">
+                            <img src="foto.fawwaz.png" alt="fawwaz" class="foto-kandidat">
+                        </div>
+                        <p class="nama-kandidat">FAWWAZ<br>MUBARAK</p>
+                        <div class="tombol">Lihat detail</div>
+                    </div>
+                </div>
             </div>
-            <p class="nama-kandidat">FAWWAZ MUBARAK</p>
-            <div class="tombol-detail">Lihat detail</div>
         </div>
-
     </div>
-
 </body>
 </html>
