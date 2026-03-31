@@ -185,7 +185,7 @@
 
         .tombol{
             width: 170px;
-            height: 38px;
+            height: 33px;
             font-weight: 600;
             background-color: rgba(6, 19, 45, 0.95);
             border: 1px solid #ffff;
