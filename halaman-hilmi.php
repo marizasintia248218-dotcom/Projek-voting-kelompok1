@@ -133,7 +133,7 @@
             border-radius: 15px;
             box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
             margin-top: 50px;
-            margin-left: 90px;
+            margin-left: 40px;
             display: flex;
             align-items: flex-end;
         }
@@ -144,16 +144,19 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            margin-left: 50px;
         }
 
         .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
-            font-weight: 900;
+            font-weight: 1000;
             text-align: center;
+            margin-top: 15px;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            text-shadow: 2px 4px 5px rgba(0, 0 , 0, 0.3);
             letter-spacing: 2px;
-            -webkit-text-stroke: rgba(255, 255, 255, 0.7);
-            margin-left: 0px;
+            margin: 0px;
             padding: 0px;
         }
 
@@ -168,7 +171,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
 
         .grup-teks{

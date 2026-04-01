@@ -18,6 +18,7 @@
 
         .tombol { width: 170px; margin-top: 10px; }
         .logout:hover, .tombol:hover, .tombol-voting:hover { background-color: #1a2a4a; }
+        .tombol-hasil:hover {background-color: rgba(217, 217, 217, 0.8)}
 
         .judul{
             font-weight: 700;
@@ -76,6 +77,18 @@
             width: 125px;
             height: 15px;
             background-color: rgba(217, 217, 217, 0.8);
+            padding: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            padding-left: 18px;
+        }
+
+        .tombol-hasil {
+            width: 125px;
+            height: 15px;
+            background-color: #1a2a4a;
             padding: 17px;
             display: flex;
             align-items: center;
@@ -218,7 +231,7 @@
         <div class="container-isi">
         <div class="box-samping">
             <div class="tombol-voting"><h3>Voting</h3></div>
-            <div class="tombol-voting"><h3>Hasil Voting</h3></div>
+            <div class="tombol-hasil"><h3>Hasil Voting</h3></div>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>

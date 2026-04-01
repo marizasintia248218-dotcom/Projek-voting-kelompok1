@@ -17,7 +17,8 @@
         }
 
         .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-voting:hover { background-color: #1a2a4a; }
+        .logout:hover, .tombol:hover, .tombol-hasil:hover { background-color: #1a2a4a; }
+        .tombol-voting:hover {background-color:  rgba(217, 217, 217, 0.8)}
 
         .judul{
             font-weight: 700;
@@ -72,7 +73,7 @@
           position: relative
         }
         
-        .tombol-voting {
+        .tombol-hasil {
             width: 125px;
             height: 15px;
             background-color: rgba(217, 217, 217, 0.8);
@@ -83,6 +84,19 @@
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
         }
+
+         .tombol-voting {
+            width: 125px;
+            height: 15px;
+            background-color: #1a2a4a;
+            padding: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            padding-left: 18px;
+        }
+
 
         .nama {
             color: white;
@@ -163,7 +177,7 @@
             justify-content: center;
             align-items: flex-end;
             width: 85%;
-            height: 95%;
+            height: 100%;
             padding-top: 20px;
         }
 
@@ -175,12 +189,12 @@
             margin-top: 15px;
             -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
             text-shadow: 2px 4px 5px rgba(0, 0 , 0, 0.3);
+            letter-spacing: 2px;
             margin: 0px;
             padding: 0px;
             display: flex;
             align-items: flex-end;
             min-height: 66px;
-            letter-spacing: 2px;
         }
 
         .tombol{
@@ -217,7 +231,7 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-voting"><h3>Voting</h3></div>
+            <div class="tombol-hasil"><h3>Voting</h3></div>
             <div class="tombol-voting"><h3>Hasil Voting</h3></div>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
