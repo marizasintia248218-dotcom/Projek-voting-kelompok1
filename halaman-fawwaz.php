@@ -344,11 +344,13 @@
         .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
-            font-weight: 900;
+            font-weight: 1000;
             text-align: center;
+            margin-top: 15px;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            text-shadow: 2px 4px 5px rgba(0, 0 , 0, 0.3);
             letter-spacing: 2px;
-            -webkit-text-stroke: rgba(255, 255, 255, 0.7);
-            margin-left: 0px;
+            margin: 0px;
             padding: 0px;
         }
 
