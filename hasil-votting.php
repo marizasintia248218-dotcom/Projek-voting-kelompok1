@@ -183,7 +183,7 @@
             letter-spacing: 2px;
         }
 
-        .tombol{
+        .bottom{
             width: 170px;
             height: 38px;
             font-weight: 600;
@@ -233,7 +233,7 @@
         <div class="container-kandidat">
             <img src="foto.angga.png" alt="angga" class="foto-kandidat"></div>
         <p class="nama-kandidat">ANGGA NAUFAL PRATAMA</p>
-        <div class="tombol">0%</div>
+        <div class="bottom">0%</div>
     </div>
 
     <div class="isi-container">
@@ -241,7 +241,7 @@
         <div class="container-kandidat">
             <img src="hilmi.png" alt="hilmi" class="foto-kandidat"></div>
         <p class="nama-kandidat">HILMI HAIDAR RASYID</p>
-        <div class="tombol">0%</div>
+        <div class="bottom">0%</div>
     </div>
 
     <div class="isi-container">
@@ -249,7 +249,7 @@
         <div class="container-kandidat">
             <img src="fawwaz.png" alt="fawwaz" class="foto-kandidat"></div>
         <p class="nama-kandidat">FAWWAZ MUBARAK</p>
-        <div class="tombol">0%</div>
+        <div class="bottom">0%</div>
     </div>
 
         </div>
