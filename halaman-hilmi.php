@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         body{
+        body{
             margin: 0px ;
             font-family: 'Poppins', sans-serif;
         }
@@ -17,8 +16,7 @@
         }
 
         .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-hasil:hover { background-color: #1a2a4a; }
-        .tombol-voting:hover {background-color:  rgba(217, 217, 217, 0.8)}
+        .logout:hover, .tombol:hover, .tombol-voting:hover { background-color: #1a2a4a; }
 
         .judul{
             font-weight: 700;
@@ -36,6 +34,7 @@
         .container-isi {
            display: flex;
            align-items: flex-start;
+           flex-direction: row;
         }
 
         .border{
@@ -73,7 +72,7 @@
           position: relative
         }
         
-        .tombol-hasil {
+        .tombol-voting {
             width: 125px;
             height: 15px;
             background-color: rgba(217, 217, 217, 0.8);
@@ -85,20 +84,7 @@
             padding-left: 18px;
         }
 
-         .tombol-voting {
-            width: 125px;
-            height: 15px;
-            background-color: #1a2a4a;
-            padding: 17px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
-            padding-left: 18px;
-        }
-
-
-        .nama {
+        .nama-user {
             color: white;
             font-size: 22px;
             margin-top: auto;
@@ -106,10 +92,9 @@
             letter-spacing: 1px;
         }
 
-        .nama p {
+        .nama-user p {
             margin: 0;
         }
-
 
         .logout {
             width: 130px;
@@ -130,58 +115,39 @@
             letter-spacing: 2px;
             font-size: 20px;
             font-weight: 600;
-        } 
-
-        .container-isi-kandidat{
-            display:flex;
-            align-items: flex-start;
-            justify-content: space-around;
         }
 
-        .container-kandidat{
-            width: 245px;
-            height: 300px;
+        .posisi-container {
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .container-kandidat {
+            width: 275px;
+            height: 375px;
             background: linear-gradient(to bottom, #B9CED6, #2E4461);
             border-radius: 15px;
             box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+            margin-top: 50px;
+            margin-left: 40px;
             display: flex;
-            justify-content: center;
             align-items: flex-end;
-            margin-top: 20px;
-            overflow: hidden;
-
         }
 
-        .isi-container{
+        .grup-nama{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            width: 260px;
-        }
-        .angka{
-            color: rgba(7, 23, 57, 1);
-            font-size: 40px;
-            font-weight: 600;
-            text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin: 0;
-            padding: 0;
-            flex-grow: 1;
+            margin-left: 50px;
         }
 
-        .foto-kandidat {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 85%;
-            height: 100%;
-            padding-top: 20px;
-        }
-
-        .nama-kandidat{
+        .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
             font-weight: 1000;
@@ -192,32 +158,71 @@
             letter-spacing: 2px;
             margin: 0px;
             padding: 0px;
+        }
+
+        .foto-kandidat {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25px;
+        }
+
+        .kolom-kiri {
             display: flex;
-            align-items: flex-end;
-            min-height: 66px;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .grup-teks{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            gap: 20px;
+        }
+
+        .teks{
+            color: rgba(255, 255, 255, 1);
+            -webkit-teks-stroke: rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 3px 3px rgba(6, 19, 45, 0.95);
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            alignment: left;
+            margin: 0;
+            flex: 1;
+        }
+
+        .kolom-kanan {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 2%;
+            max-width: 760px;
+        }
+
+        .grup-tombol{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 5%;
+            margin-top: 5%;
         }
 
         .tombol{
-            width: 170px;
-            height: 33px;
-            font-weight: 600;
+            width: 175px;
+            height: auto;
             background-color: rgba(6, 19, 45, 0.95);
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            color: #ffff;
-            font-size: 20px;
-            letter-spacing: 3px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 6px;
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            text-align: center;
         }
-
-        .tombol p {
-            display: flex; 
-            padding-bottom: 10px;
-        }
-
     </style>
 </head>
 <body>
@@ -231,42 +236,43 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-hasil"><h3>Voting</h3></div>
+            <div class="tombol-voting"><h3>Voting</h3></div>
             <div class="tombol-voting"><h3>Hasil Voting</h3></div>
-            <div class="nama"><p>hi ita!</p></div>
+            <div class="nama-user"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>
 
         <div style="flex-grow: 1;">
-            <p class="judul">Daftar Kandidat</p>
+            <p class="judul">Detail Kandidat 2</p>
+
+        <div class="posisi-container">
+                    
+            <div class="kolom-kiri">
+                <div class="container-kandidat">
+                    <img src="hilmi.png" alt="hilmi" class="foto-kandidat">
+                </div>
+
+                <div class="grup-nama">
+                    <div class="nama">HILMI HAIDAR RASYID</div>
+                    <div class="nama">XI RPL 2</div>
+                </div>
+            </div>
+
+            <div class="kolom-kanan">
+                <div class="teks">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
+                </div>
+                <div class="grup-tombol">
+                    <div class="tombol">Kirim Pilihan</div>
+                    <div class="tombol">Kembali</div>
+                </div>
+            </div>
 
 
-        <div class="container-isi-kandidat">
-    <div class="isi-container"> 
-        <p class="angka">01</p>
-        <div class="container-kandidat">
-            <img src="foto.angga.png" alt="angga" class="foto-kandidat"></div>
-        <p class="nama-kandidat">ANGGA NAUFAL PRATAMA</p>
-        <div class="tombol">Lihat detail</div>
-    </div>
-
-    <div class="isi-container">
-        <p class="angka">02</p>
-        <div class="container-kandidat">
-            <img src="hilmi.png" alt="hilmi" class="foto-kandidat"></div>
-        <p class="nama-kandidat">HILMI HAIDAR RASYID</p>
-        <div class="tombol">Lihat detail</div>
-    </div>
-
-    <div class="isi-container">
-        <p class="angka">03</p>
-        <div class="container-kandidat">
-            <img src="fawwaz.png" alt="fawwaz" class="foto-kandidat"></div>
-        <p class="nama-kandidat">FAWWAZ MUBARAK</p>
-        <div class="tombol">Lihat detail</div>
-    </div>
-
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
+</div>
 </body>
 </html>
