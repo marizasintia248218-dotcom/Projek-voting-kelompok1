@@ -29,7 +29,7 @@
 
         .logoosis{
             height: 39px;
-            margin-left: auto;
+            margin-left: 86%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -79,7 +79,7 @@
             align-items: center;
             gap: 25px;
         }
-        
+
 
         .border-nisn {
             width: 350px;
@@ -89,13 +89,14 @@
             border-radius: 10px;
             font-size: 25px;
             font-weight: 540;
-            color: rgba(255, 255, 255, 0.54);
+            font: rgba(0, 0, 0, 0.54);
             letter-spacing: 3px;
             padding-left: 60px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
+            box-shadow: 5px 8px 8px  rgba(0, 0, 0, 0.32);
         }
 
 
@@ -106,13 +107,14 @@
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 10px;
             font-size: 25px;
-            color: rgba(255, 255, 255, 0.54);
+            font: rgba(0, 0, 0, 0.54);
             letter-spacing: 3px;
             padding-left: 60px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
+            box-shadow: 5px 8px 8px  rgba(0, 0, 0, 0.32);
         }
 
 
@@ -125,12 +127,14 @@
             font-size: 28px;
             color: rgba(255, 255, 255, 1);
             letter-spacing: 2px;
-            margin-top: 70px;
-            margin-bottom: 40px;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        .masuk:hover {background-color: rgba(0, 0, 0, 0.1)}
+        .border-kode:hover, .border-nisn:hover {background-color: rgba(255, 255, 255, 0.95)}
 
         
         .gambar {
@@ -154,6 +158,15 @@
             margin-top: 35px;
         }
 
+
+        form {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
@@ -164,23 +177,21 @@
             <h5>maderazevot</h5>
             <img src="logoosis.png" alt="logo" class="logoosis">
         </div>
-
             <div class="judul">Pemilihan Ketua OSIS SMK Negeri 1 Kandeman</div>
 
-            <div class="grup-login">
+        <div class="grup-login">
             <div class="containerlogin">
-                <div class="gambar"><img src="hal1.png" alt="gambar orang"></div>
-
-            <div class="area-login">
-                <div class="grup-teks">
-                    <div class="border-nisn">Masukkan NISN</div>
-                    <div class="border-kode">Masukkan Kode</div>
+                    <div class="gambar"><img src="hal1.png" alt="gambar orang"></div>
+                        <div class="area-login">
+                            <form action="aksi-login.php" method="POST" class="grup-teks">
+                                <input type="text" name="nisn" class="border-nisn" placeholder="Masukkan NISN">
+                                <input type="text" name="kode" class="border-kode" placeholder="Masukkan Kode">
+                                <button type="submit" class="masuk">Masuk</button>  
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="masuk">Masuk</div>
-            </div>
 
-            </div>
-            </div>
             <div class="maderazevot">Design by maderaze.vot.smkn1kandeman</div>
 
     </div>
