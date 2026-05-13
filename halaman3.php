@@ -250,8 +250,8 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-voting"><h3>Voting</h3></div>
-            <div class="tombol-hasil"><h3>Hasil Voting</h3></div>
+            <a class="tombol-voting" href="halaman3.php">Voting</a>
+            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>
@@ -287,7 +287,7 @@
             <img src="fawwaz.png" alt="fawwaz" class="foto-kandidat"></div>
         <p class="nama-kandidat">FAWWAZ MUBARAK</p>
 
-        <a herf="halaman-fawwaz.php"
+        <a href="halaman-fawwaz.php"
         class="buttom">Lihat detail</a>
     </div>
 

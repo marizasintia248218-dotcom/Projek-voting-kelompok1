@@ -107,15 +107,14 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 30px;
-        }
-
-        .logout p {
-            color: #fff;
+            text-decoration: none;
             margin: 0;
             letter-spacing: 2px;
             font-size: 20px;
             font-weight: 600;
+            margin-bottom: 20px;
         }
+
 
         .posisi-container {
             margin: 0;
@@ -224,18 +223,7 @@
             text-align: center;
             text-decoration:none;
         }
-        .buttom{
-             width: 175px;
-            height: auto;
-            background-color: rgba(6, 19, 45, 0.95);
-            color: rgb(255, 255, 255);
-            font-size: 26px;
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 13px;
-            padding: 10px;
-            text-align: center;
-             text-decoration:none;
-        }
+        
     </style>
 </head>
 <body>
@@ -249,10 +237,10 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-voting"><h3>Voting</h3></div>
-            <div class="tombol-voting"><h3>Hasil Voting</h3></div>
+            <a class="tombol-voting" href="halaman3.php">Voting</a>
+            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama-user"><p>hi ita!</p></div>
-            <div class="logout"><p>Log Out</p></div>
+            <a class="logout" href="halaman1.php">Logout</a>
         </div>
 
         <div style="flex-grow: 1;">
@@ -276,8 +264,10 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
                 </div>
                 <div class="grup-tombol">
-                    <a href="yakinpilihan.php"
-                    class="buttom">Kirim Pilihan</a>
+                   <form action="yakinpilihan3.php" method="POST">
+                    <input type="text" name="pilihan" value="fawwaz">
+                     <button type="submit" class="tombol">Kirim Pilihan</button> 
+                    </from>
 
                     <a href="halaman3.php"
                     class="tombol">Kembali</a>
