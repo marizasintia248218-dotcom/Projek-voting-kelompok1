@@ -188,7 +188,8 @@
             <div class="container1">
                 <p>NISN dan Kode anda salah,
                  Silahkan coba kembali!</p>
-                 <button>Kembali</button>
+                 <a href="halaman1.php" >kembali</a>
+                    
             </div>
 
         </div>
