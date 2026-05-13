@@ -315,7 +315,7 @@
             <div class="grup-tombol1">
 
             <form action="aksi-pilihan.php" method="POST">
-                <input type="text" name="aksi-pilihan" value="angga">
+                <input type="text" name="aksi-pilihan" value="fawwaz">
                 <button type="submit" class="masuk">Simpan</button>  
              <a class="bottom" href="halaman3.php">Kembali</a>
            </from>

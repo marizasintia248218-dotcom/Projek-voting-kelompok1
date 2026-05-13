@@ -179,8 +179,8 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-voting"><h3>Voting</h3></div>
-            <div class="tombol-voting"><h3>Hasil Voting</h3></div>
+            <a class="tombol-voting" href="halaman3.php">Voting</a>
+            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama-user"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>
@@ -188,7 +188,8 @@
             <div class="container1">
                 <p>NISN dan Kode anda salah,
                  Silahkan coba kembali!</p>
-                 <button type="submit" class="button">Kembali</button>
+                 <a href="halaman1.php" >kembali</a>
+                    
             </div>
 
         </div>

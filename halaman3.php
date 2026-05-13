@@ -197,7 +197,7 @@
             min-height: 66px;
         }
 
-        .tombol{
+        .buttom{
             width: 170px;
             height: 33px;
             font-weight: 600;
@@ -211,6 +211,25 @@
             justify-content: center;
             align-items: flex-end;
             padding-bottom: 6px;
+            text-decoration:none;
+            
+        }
+      .tombol{
+            width: 170px;
+            height: 33px;
+            font-weight: 600;
+            background-color: rgba(6, 19, 45, 0.95);
+            border: 1px solid #ffff;
+            border-radius: 8px;
+            color: #ffff;
+            font-size: 20px;
+            letter-spacing: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 6px;
+            text-decoration:none;
+            
         }
 
         .tombol p {
@@ -231,8 +250,8 @@
 
         <div class="container-isi">
         <div class="box-samping">
-            <div class="tombol-hasil"><h3>Voting</h3></div>
-            <div class="tombol-hasil"><h3>Hasil Voting</h3></div>
+            <a class="tombol-voting" href="halaman3.php">Voting</a>
+            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>
@@ -247,7 +266,9 @@
         <div class="container-kandidat">
             <img src="foto.angga.png" alt="angga" class="foto-kandidat"></div>
         <p class="nama-kandidat">ANGGA NAUFAL PRATAMA</p>
-        <div class="tombol">Lihat detail</div>
+
+        <a href="halaman-angga.php"
+        class="buttom">Lihat detail</a>
     </div>
 
     <div class="isi-container">
@@ -255,7 +276,9 @@
         <div class="container-kandidat">
             <img src="hilmi.png" alt="hilmi" class="foto-kandidat"></div>
         <p class="nama-kandidat">HILMI HAIDAR RASYID</p>
-        <div class="tombol">Lihat detail</div>
+
+        <a href="halaman-hilmi.php"
+        class="buttom">Lihat detail</a>
     </div>
 
     <div class="isi-container">
@@ -263,7 +286,9 @@
         <div class="container-kandidat">
             <img src="fawwaz.png" alt="fawwaz" class="foto-kandidat"></div>
         <p class="nama-kandidat">FAWWAZ MUBARAK</p>
-        <div class="tombol">Lihat detail</div>
+
+        <a href="halaman-fawwaz.php"
+        class="buttom">Lihat detail</a>
     </div>
 
         </div>
