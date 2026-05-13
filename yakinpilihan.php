@@ -15,9 +15,7 @@
             background: linear-gradient(to bottom, #BACFD7, #304E79);
         }
 
-        .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-voting:hover, .bottom:hover { background-color: #1a2a4a; }
-
+      
         .judul{
             font-weight: 700;
             letter-spacing: 3px;
@@ -310,6 +308,7 @@
             Setelah klik “Simpan” pilihan
             anda tidak dapat diubah</P>
             <div class="grup-tombol1">
+
             <div class="bottom">Simpan</div>
              <div class="bottom">Kembali</div>
             </div>

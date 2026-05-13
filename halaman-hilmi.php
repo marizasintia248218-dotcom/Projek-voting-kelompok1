@@ -222,6 +222,19 @@
             border-radius: 13px;
             padding: 10px;
             text-align: center;
+             text-decoration:none;
+        }
+        .buttom{
+             width: 175px;
+            height: auto;
+            background-color: rgba(6, 19, 45, 0.95);
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            text-align: center;
+             text-decoration:none;
         }
     </style>
 </head>
@@ -263,9 +276,11 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
                 </div>
                 <div class="grup-tombol">
-                    <div class="tombol">Kirim Pilihan</div>
-                    <div class="tombol">Kembali</div>
-                </div>
+                    <a href="yakinpilihan.php"
+                    class="buttom">Kirim Pilihan</a>
+
+                    <a href="halaman3.php"
+                    class="tombol">Kembali</a>
             </div>
 
 
