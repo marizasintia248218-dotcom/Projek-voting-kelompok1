@@ -232,7 +232,7 @@
         <div class="container-isi">
         <div class="box-samping">
             <div class="tombol-hasil"><h3>Voting</h3></div>
-            <div class="tombol-voting"><h3>Hasil Voting</h3></div>
+            <div class="tombol-hasil"><h3>Hasil Voting</h3></div>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>

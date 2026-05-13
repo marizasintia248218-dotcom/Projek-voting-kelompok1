@@ -188,7 +188,7 @@
             <div class="container1">
                 <p>NISN dan Kode anda salah,
                  Silahkan coba kembali!</p>
-                 <button type= 'submit'>Kembali</button>
+                 <button type="submit" class="button">Kembali</button>
             </div>
 
         </div>
