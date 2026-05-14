@@ -1,7 +1,3 @@
-<?php 
-    echo $_POST['pilihan'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,25 +136,28 @@
             align-items: flex-end;
         }
 
-        .grup-nama{
+         .grup-nama{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            margin-left: 85px;
+            margin-left: 50px;
         }
 
         .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
-            font-weight: 900;
+            font-weight: 1000;
             text-align: center;
+            margin-top: 15px;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            text-shadow: 2px 4px 5px rgba(0, 0 , 0, 0.3);
             letter-spacing: 2px;
-            -webkit-text-stroke: rgba(255, 255, 255, 0.7);
-            margin-left: 0px;
+            margin: 0px;
             padding: 0px;
         }
+
 
         .foto-kandidat {
             display:flex;
@@ -238,25 +237,41 @@
             text-decoration: none;
             text-align: center;
             justify-content: center;
-            font-size:36px;
+            font-size:35px;
             margin: 20px 5px;
             top: 23%;
             left: 50%;
             bottom: 80px;
+            margin-top:20px;
+            margin-bottom: 26px;
             transform: translateX(-50%);
             
         }
-        .grup-tombol1{
+
+
+        .grup-tombol1 form{
             display:flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-around;
-            margin-right: 5%;
-            margin-top: 5%;
-            gap:100px
-            
-            
+            gap: 100px;
+            width: 100%;
         }
 
+        .masuk {
+            text-decoration: none;
+            width: 140px;
+            height: auto;
+            background-color: rgba(6, 19, 45, 0.95);
+            color: rgb(255, 255, 255);
+            font-size: 28px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            text-align: center;
+            text-decoration:none;
+        }
+
+        .masuk:hover{background-color: rgba(255, 255, 255, 0.10)}
        
     </style>
 </head>
@@ -265,61 +280,53 @@
 
         <div class="border">
             <img src="logo.png" alt="logo">
-            <h5>maderazevot</h5>
+                <h5>maderazevot</h5>
             <img src="logoosis.png" alt="logo" class="logoosis">
         </div>
 
         <div class="container-isi">
-        <div class="box-samping">
-            <div class="tombol-voting"><h3>Voting</h3></div>
-            <div class="tombol-voting"><h3>Hasil Voting</h3></div>
-            <div class="nama-user"><p>hi ita!</p></div>
-            <div class="logout"><p>Log Out</p></div>
+            <div class="box-samping">
+                <div class="tombol-voting"><h3>Voting</h3></div>
+                    <div class="tombol-voting"><h3>Hasil Voting</h3></div>
+                        <div class="nama-user"><p>hi ita!</p></div>
+                            <div class="logout"><p>Log Out</p></div>
         </div>
 
         <div style="flex-grow: 1;">
             <p class="judul">Detail Kandidat </p>
-
-        <div class="posisi-container">
-                    
-            <div class="kolom-kiri">
-                <div class="container-kandidat">
-                    <img src="hilmi.png" alt="hilmi" class="foto-kandidat">
-                </div>
+                <div class="posisi-container">     
+                    <div class="kolom-kiri">
+                        <div class="container-kandidat">
+                            <img src="hilmi.png" alt="hilmi" class="foto-kandidat">
+        </div>
 
                 <div class="grup-nama">
-                    <div class="nama">HILMI HAIDAR R</div>
-                    <div class="nama">XI RPL 2</div>
+                        <div class="nama">ANGGA NAUFAL P</div>
+                            <div class="nama">XI RPL 1</div>
                 </div>
-            </div>
+        </div>
 
             <div class="kolom-kanan">
                 <div class="teks">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
-                </div>
-                <div class="grup-tombol">
-                    <div class="bottom">Kirim Pilihan</div>
-                    <div class="bottom">Kembali</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p></div>
+                        <div class="grup-tombol">
+                            <div class="bottom">Kirim Pilihan</div>
+                                <div class="bottom">Kembali</div>
                 </div>
             </div>
 
-
-                </div>
-            </div>
-        </div>
-        </div>
         <div class="container1">
                 <p>Yakin dengan pilihan anda?
-            Setelah klik “Simpan” pilihan
-            anda tidak dapat diubah</P>
-            <div class="grup-tombol1">
+                    Setelah klik Simpan pilihan
+                    anda tidak dapat diubah</P>
 
-            <form action="aksi-pilihan.php" method="POST">
-                <input type="text" name="aksi-pilihan" value="angga">
-                <button type="submit" class="masuk">Simpan</button>  
-             <a class="bottom" href="halaman3.php">Kembali</a>
-           </from>
-            </div>
-            </div>
+                        <div class="grup-tombol1">
+                            <form action="aksi-pilihan.php" method="POST">
+                                <input type="hidden" name="aksi-pilihan" value="angga">
+                                    <button type="submit" class="masuk">Simpan</button>  
+                                        <a class="masuk" href="halaman3.php">Kembali</a>
+                            </form>
+                        </div>
+    </div>
 </body>
 </html>

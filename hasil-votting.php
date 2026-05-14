@@ -83,6 +83,9 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
         }
 
         .tombol-hasil {
@@ -95,6 +98,9 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(217, 217, 217, 0.8);
+            font-weight: 900;
         }
 
         .nama {
@@ -121,15 +127,14 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 30px;
-        }
-
-        .logout p {
+            text-decoration: none;
             color: #fff;
             margin: 0;
             letter-spacing: 2px;
             font-size: 20px;
             font-weight: 600;
-        } 
+            margin-bottom: 20px;
+        }
 
         .container-isi-kandidat{
             display:flex;
@@ -231,7 +236,7 @@
         <div class="container-isi">
         <div class="box-samping">
             <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
+            <a class="tombol-hasil" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama"><p>hi ita!</p></div>
             <a class="logout" href="halaman1.php">Logout</a>
         </div>

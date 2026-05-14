@@ -17,7 +17,7 @@
         }
 
         .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-hasil:hover { background-color: #1a2a4a; }
+        .logout:hover, .tombol:hover, .tombol-hasil:hover { background-color: #273a61; }
         .tombol-voting:hover {background-color:  rgba(217, 217, 217, 0.8)}
 
         .judul{
@@ -83,6 +83,9 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
         }
 
          .tombol-voting {
@@ -95,6 +98,9 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
         }
 
 
@@ -121,7 +127,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .logout p {
@@ -177,7 +183,7 @@
             justify-content: center;
             align-items: flex-end;
             width: 85%;
-            height: 100%;
+            height: 95%;
             padding-top: 20px;
         }
 
@@ -251,7 +257,7 @@
         <div class="container-isi">
         <div class="box-samping">
             <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
+            <a class="tombol-hasil" href="hasil-votting.php">Hasil Voting</a>
             <div class="nama"><p>hi ita!</p></div>
             <div class="logout"><p>Log Out</p></div>
         </div>

@@ -72,7 +72,7 @@
           position: relative
         }
         
-        .tombol-voting {
+         .tombol-voting {
             width: 125px;
             height: 15px;
             background-color: rgba(217, 217, 217, 0.8);
@@ -82,6 +82,24 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
+        }
+
+        .tombol-hasil {
+            width: 125px;
+            height: 15px;
+            background-color: #1a2a4a;
+            padding: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
         }
 
         .nama-user {
@@ -132,7 +150,7 @@
             border-radius: 15px;
             box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
             margin-top: 50px;
-            margin-left: 40px;
+            margin-left: 50px;
             display: flex;
             align-items: flex-end;
         }
@@ -170,7 +188,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
         }
 
         .grup-teks{
@@ -221,62 +239,55 @@
             border-radius: 13px;
             padding: 10px;
             text-align: center;
-             text-decoration:none;
+            text-decoration:none;
         }
         
     </style>
 </head>
 <body>
     <div class="halaman3">
-
         <div class="border">
             <img src="logo.png" alt="logo">
-            <h5>maderazevot</h5>
-            <img src="logoosis.png" alt="logo" class="logoosis">
+                <h5>maderazevot</h5>
+                    <img src="logoosis.png" alt="logo" class="logoosis">
         </div>
 
         <div class="container-isi">
-        <div class="box-samping">
-            <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
-            <div class="nama-user"><p>hi ita!</p></div>
-            <a class="logout" href="halaman1.php">Logout</a>
+            <div class="box-samping">
+                <a class="tombol-voting" href="halaman3.php">Voting</a>
+                    <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
+                        <div class="nama-user"><p>hi ita!</p></div>
+                            <a class="logout" href="halaman1.php">Logout</a>
         </div>
 
         <div style="flex-grow: 1;">
-            <p class="judul">Detail Kandidat 2</p>
+            <p class="judul">Detail Kandidat 3</p>
+                <div class="posisi-container">    
+                    <div class="kolom-kiri">
+                        <div class="container-kandidat">
+                            <img src="hilmi.png" alt="fawwaz" class="foto-kandidat">
+        </div>
 
-        <div class="posisi-container">
-                    
-            <div class="kolom-kiri">
-                <div class="container-kandidat">
-                    <img src="hilmi.png" alt="hilmi" class="foto-kandidat">
-                </div>
-
-                <div class="grup-nama">
-                    <div class="nama">HILMI HAIDAR RASYID</div>
-                    <div class="nama">XI RPL 2</div>
+            <div class="grup-nama">
+                <div class="nama">HILMI HAIDAR RASYID</div>
+                    <div class="nama">XI RPL 1</div>
                 </div>
             </div>
 
             <div class="kolom-kanan">
                 <div class="teks">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
-                </div>
+            </div>
                 <div class="grup-tombol">
-                    <form action="yakinpilihan2.php" method="POST">
-                        <input type="text" name="pilihan" value="hilmi">
-                     <button type="submit" class="tombol">Kirim Pilihan</button> 
-                    </from>
-                    <a href="halaman3.php"
-                    class="tombol">Kembali</a>
-            </div>
-
-
+                   <form action="yakinpilihan2.php" method="POST">
+                        <input type="hidden" name="pilihan" value="fawwaz">
+                            <button type="submit" class="tombol">Kirim Pilihan</button> 
+                    </form>
+                                <a href="halaman3.php"
+                                    class="tombol">Kembali</a>
                 </div>
-            </div>
-        </div>
-        </div>
+                    </div>
+                        </div>
 </div>
 </body>
 </html>

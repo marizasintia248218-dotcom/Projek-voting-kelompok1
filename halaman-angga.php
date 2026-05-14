@@ -82,6 +82,24 @@
             justify-content: center;
             text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
             padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
+        }
+
+        .tombol-hasil {
+            width: 125px;
+            height: 15px;
+            background-color: #1a2a4a;
+            padding: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+            padding-left: 18px;
+            text-decoration: none;
+            color: rgba(6, 19, 45, 1);
+            font-weight: 900;
         }
 
         .nama-user {
@@ -143,17 +161,19 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            margin-left: 2%;
+            margin-left: 50px;
         }
 
         .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
-            font-weight: 900;
+            font-weight: 1000;
             text-align: center;
+            margin-top: 15px;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            text-shadow: 2px 4px 5px rgba(0, 0 , 0, 0.3);
             letter-spacing: 2px;
-            -webkit-text-stroke: rgba(255, 255, 255, 0.7);
-            margin-left: 0px;
+            margin: 0px;
             padding: 0px;
         }
 
@@ -193,7 +213,7 @@
             flex: 1;
         }
 
-            .kolom-kanan {
+        .kolom-kanan {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -205,6 +225,7 @@
             display:flex;
             align-items: center;
             justify-content: space-around;
+            gap: 30px;
             margin-right: 5%;
             margin-top: 5%;
         }
@@ -219,7 +240,7 @@
             border-radius: 13px;
             padding: 10px;
             text-align: center;
-             text-decoration:none;
+            text-decoration:none;
         }
         
     </style>
@@ -263,9 +284,9 @@
                 </div>
                 <div class="grup-tombol">
                     <form action="yakinpilihan.php" method="POST">
-                        <input type="text" name="pilihan" value="angga">
+                        <input type="hidden" name="pilihan" value="angga">
                         <button type="submit" class="tombol">Kirim Pilihan</button> 
-                    </from>
+                    </form>
                     <a href="halaman3.php"
                     class="tombol">Kembali</a>
                 </div>

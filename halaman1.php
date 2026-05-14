@@ -61,7 +61,7 @@
         
         .containerlogin{
             width: 730px;
-            height: 370px;
+            height: 360px;
             margin-top: 1%;
             background-color: rgba(0, 0, 0, 0.1);
             box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.45);

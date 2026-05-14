@@ -11,41 +11,165 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-voting:hover, .bottom:hover { background-color: #1a2a4a; }
-        
 
-        .halaman2 { 
+        .halaman{
             width: auto;
-            height: 632px;
-            background: linear-gradient(to bottom, #BACFD7, #304E79);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-
+            height: 620px;
+            background: linear-gradient(to bottom,  #BACFD7, #304E79);
         }
 
         .border{
-            height: 47px;
-            background: rgb(255, 255, 255,  0.3);
+            height: 45px;
+            background-color: rgb(255, 255, 255,  0.3);
             display: flex;
             justify-content: flex-start;
             align-items: center;
             padding-left: 5px;
             font: solid #000;
             font-size: 20px;
-}
- 
-        .logoosis{
-           height: 39px;
-           margin-left: auto;
-           display: flex;
-           justify-content: flex-end;
-           align-items: center;
-           padding-right: 8px;
         }
 
-        .container1{
+        .logoosis{
+            height: 39px;
+            margin-left: 86%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .judul {
+            color: #ffff;
+            -webkit-teks-stroke: 5px solid rgba(0, 0, 0, 0.2);
+            font-size: 40px;
+            font-weight: 550;
+            letter-spacing: 3%;
+            line-height: 47px;
+            text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.35);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+
+        .grup-login{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        
+        .containerlogin{
+            width: 730px;
+            height: 360px;
+            margin-top: 1%;
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.45);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            display: flex;
+            align-items: center;
+            overflow: visible;
+        }
+
+
+        .grup-teks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+
+        .border-nisn {
+            width: 350px;
+            height: 50px;
+            background: rgba(217, 217, 217, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 540;
+            font: rgba(0, 0, 0, 0.54);
+            letter-spacing: 3px;
+            padding-left: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            box-shadow: 5px 8px 8px  rgba(0, 0, 0, 0.32);
+        }
+
+
+        .border-kode {
+            width: 350px;
+            height: 50px;
+            background: rgba(217, 217, 217, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            font-size: 25px;
+            font: rgba(0, 0, 0, 0.54);
+            letter-spacing: 3px;
+            padding-left: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            box-shadow: 5px 8px 8px  rgba(0, 0, 0, 0.32);
+        }
+
+
+        .masuk{
+            width: 410px;
+            height: 55px;
+            border-radius: 10px;
+            background: rgba(6, 19, 45, 0.95);
+            border: 1px solid rgba(255, 255, 255, 1);
+            font-size: 28px;
+            color: rgba(255, 255, 255, 1);
+            letter-spacing: 2px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .masuk:hover {background-color: rgba(0, 0, 0, 0.1)}
+        .border-kode:hover, .bottom:hover {background-color: rgba(255, 255, 255, 0.12)}
+
+        
+        .gambar {
+            margin: 0;
+            padding:0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+
+        .maderazevot {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 5%;
+            color: rgba(0, 0, 0, 1);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 35px;
+        }
+
+
+        form {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+         .container1{
             position: fixed;
             border: 1px solid white;
             background-color: #05142B;
@@ -65,134 +189,65 @@
             left: 50%;
             bottom: 80px;
             transform: translateX(-50%);
-            
+            text-decoration: none;
         }
+
+
         .container{
            display:flex;
+           text-decoration: none;
         }
 
-        .logout{
-            background:#2c3e50;
-            color:white;
-            border:none;
-            padding:8px 15px;
-            border-radius:5px;
-        }
-
-        button {
-            font-size: 38px;
-            color: #ffff;
-            letter-spacing: 2px;
-            display: inline-block;
-            text-align: center;
-            align-items: flex-end;
-            height: 97px;
-            width: 263px;
-            border: 1px solid #ffff;
-            border-radius: 15px;
-            position: relative;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
-            background-color: rgba(6, 19, 45, 0.95);
+         .bottom {
             text-decoration: none;
-            transition: 0.3s ease all;
-        }
-
-        .box-samping{
-          width:140px;
-          height: 438px;
-          background:rgba(6, 19, 45, 0.42);
-          padding:10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          padding-top: 140px; 
-          align-items: center;
-          gap: 23px;
-          text-shadow: 10px 4px 4px solid #0000;
-          position: relative
-        }
-        
-        .tombol-voting {
-            width: 125px;
-            height: 15px;
-            background-color: rgba(217, 217, 217, 0.8);
-            padding: 17px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
-            padding-left: 18px;
-        }
-
-        .nama-user {
-            color: white;
-            font-size: 22px;
-            margin-top: auto;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .nama-user p {
-            margin: 0;
-        }
-
-        .logout {
-            width: 105px;
-            height: 25px;
+            width: 175px;
+            height: auto;
             background-color: rgba(6, 19, 45, 0.95);
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            color: #ffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            text-align: center;
+            text-decoration:none;
         }
 
-        .logout p {
-            color: #fff;
-            margin: 0;
-            letter-spacing: 2px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .posisi-container {
-            margin: 0;
-            padding: 0;
-            gap: 30px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-
-        
     </style>
 </head>
 <body>
-    <div class="halaman2">
+ <div class="halaman">
+
         <div class="border">
             <img src="logo.png" alt="logo">
-            <h6>maderazevot</h6>
+            <h5>maderazevot</h5>
             <img src="logoosis.png" alt="logo" class="logoosis">
-    </div>
-
-        <div class="container-isi">
-        <div class="box-samping">
-            <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
-            <div class="nama-user"><p>hi ita!</p></div>
-            <div class="logout"><p>Log Out</p></div>
         </div>
+            <div class="judul">Pemilihan Ketua OSIS SMK Negeri 1 Kandeman</div>
+
+        <div class="grup-login">
+            <div class="containerlogin">
+                    <div class="gambar"><img src="hal1.png" alt="gambar orang"></div>
+                        <div class="area-login">
+                            <form action="aksi-login.php" method="POST" class="grup-teks">
+                                <input type="text" name="nisn" class="border-nisn" placeholder="Masukkan NISN">
+                                <input type="text" name="kode" class="border-kode" placeholder="Masukkan Kode">
+                                <button type="submit" class="masuk">Masuk</button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="maderazevot">Design by maderaze.vot.smkn1kandeman</div>
 
             <div class="container1">
                 <p>NISN dan Kode anda salah,
                  Silahkan coba kembali!</p>
-                 <a href="halaman1.php" >kembali</a>
+                 <a href="halaman1.php" class="bottom" >kembali</a>
                     
             </div>
 
         </div>
     </div>
+</div>
 </body>
 </html>
