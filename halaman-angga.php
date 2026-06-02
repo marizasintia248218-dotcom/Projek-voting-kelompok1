@@ -250,23 +250,22 @@
 
         <div class="border">
             <img src="logo.png" alt="logo">
-            <h5>maderazevot</h5>
-            <img src="logoosis.png" alt="logo" class="logoosis">
+                <h5>maderazevot</h5>
+                    <img src="logoosis.png" alt="logo" class="logoosis">
         </div>
 
         <div class="container-isi">
-        <div class="box-samping">
-            <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
-            <div class="nama-user"><p>hi ita!</p></div>
-            <a class="logout" href="halaman1.php">Logout</a>
+            <div class="box-samping">
+                <a class="tombol-voting" href="halaman3.php">Voting</a>
+                    <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
+                        <div class="nama-user"><p>hi ita!</p></div>
+                            <a class="logout" href="halaman1.php">Logout</a>
         </div>
 
         <div style="flex-grow: 1;">
             <p class="judul">Detail Kandidat 1</p>
 
-        <div class="posisi-container">
-                    
+        <div class="posisi-container">        
             <div class="kolom-kiri">
                 <div class="container-kandidat">
                     <img src="foto.angga.png" alt="fawwaz" class="foto-kandidat">
@@ -274,22 +273,21 @@
 
                 <div class="grup-nama">
                     <div class="nama">ANGGA NAUFAL PRATAMA</div>
-                    <div class="nama">XI RPL 2</div>
+                        <div class="nama">XI RPL 2</div>
                 </div>
-            </div>
+        </div>
 
             <div class="kolom-kanan">
                 <div class="teks">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae officiis eos non voluptate? Sint nisi quis accusantium dolores dignissimos incidunt corrupti vel quod pariatur, beatae voluptates reiciendis obcaecati quibusdam deleniti deserunt id maxime dolore ab laudantium? Accusantium tempore, rerum fugiat fugit, sed obcaecati laborum, vero ex in modi beatae architecto eum animi quod ipsum ipsa laboriosam repudiandae culpa qui! Accusamus nihil error repudiandae omnis fugiat labore dignissimos numquam dolore corporis esse, tempore quisquam, illo ullam placeat ab eos quo necessitatibus!</p>
                 </div>
-                <div class="grup-tombol">
+                    <div class="grup-tombol">
                     <form action="yakinpilihan.php" method="POST">
                         <input type="hidden" name="pilihan" value="angga">
-                        <button type="submit" class="tombol">Kirim Pilihan</button> 
+                            <button type="submit" class="tombol">Kirim Pilihan</button> 
                     </form>
-                    <a href="halaman3.php"
-                    class="tombol">Kembali</a>
-                </div>
+                                <a href="halaman3.php" class="tombol">Kembali</a>
+                    </div>
             </div>
 
 
