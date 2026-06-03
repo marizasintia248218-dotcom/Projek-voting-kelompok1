@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         body{
+        body{
             margin: 0px ;
             font-family: 'Poppins', sans-serif;
         }
@@ -16,10 +15,7 @@
             background: linear-gradient(to bottom, #BACFD7, #304E79);
         }
 
-        .tombol { width: 170px; margin-top: 10px; }
-        .logout:hover, .tombol:hover, .tombol-hasil:hover { background-color: #273a61; }
-        .tombol-voting:hover {background-color:  rgba(217, 217, 217, 0.8)}
-
+      
         .judul{
             font-weight: 700;
             letter-spacing: 3px;
@@ -36,6 +32,7 @@
         .container-isi {
            display: flex;
            align-items: flex-start;
+           flex-direction: row;
         }
 
         .border{
@@ -73,7 +70,8 @@
           position: relative
         }
         
-        .tombol-hasil {
+        
+        .tombol-voting {
             width: 125px;
             height: 15px;
             background-color: rgba(217, 217, 217, 0.8);
@@ -88,7 +86,7 @@
             font-weight: 900;
         }
 
-         .tombol-voting {
+        .tombol-hasil {
             width: 125px;
             height: 15px;
             background-color: #1a2a4a;
@@ -103,8 +101,7 @@
             font-weight: 900;
         }
 
-
-        .nama {
+        .nama-user {
             color: white;
             font-size: 22px;
             margin-top: auto;
@@ -112,10 +109,18 @@
             letter-spacing: 1px;
         }
 
-        .nama p {
-            margin: 0;
+
+        .nama-user {
+            color: white;
+            font-size: 22px;
+            margin-top: auto;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
+        .nama-user p {
+            margin: 0;
+        }
 
         .logout {
             width: 130px;
@@ -127,8 +132,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
-            text-decoration: none;
+            margin-bottom: 30px;
         }
 
         .logout p {
@@ -137,58 +141,39 @@
             letter-spacing: 2px;
             font-size: 20px;
             font-weight: 600;
-        } 
-
-        .container-isi-kandidat{
-            display:flex;
-            align-items: flex-start;
-            justify-content: space-around;
         }
 
-        .container-kandidat{
-            width: 245px;
-            height: 300px;
+        .posisi-container {
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .container-kandidat {
+            width: 275px;
+            height: 375px;
             background: linear-gradient(to bottom, #B9CED6, #2E4461);
             border-radius: 15px;
             box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+            margin-top: 50px;
+            margin-left: 90px;
             display: flex;
-            justify-content: center;
             align-items: flex-end;
-            margin-top: 20px;
-            overflow: hidden;
-
         }
 
-        .isi-container{
+         .grup-nama{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            width: 260px;
-        }
-        .angka{
-            color: rgba(7, 23, 57, 1);
-            font-size: 40px;
-            font-weight: 600;
-            text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin: 0;
-            padding: 0;
-            flex-grow: 1;
+            margin-left: 50px;
         }
 
-        .foto-kandidat {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 85%;
-            height: 95%;
-            padding-top: 20px;
-        }
-
-        .nama-kandidat{
+        .nama{
             color: rgba(7, 23, 57, 1);
             font-size: 25px;
             font-weight: 1000;
@@ -199,51 +184,126 @@
             letter-spacing: 2px;
             margin: 0px;
             padding: 0px;
-            display: flex;
-            align-items: flex-end;
-            min-height: 66px;
         }
 
-        .buttom{
-            width: 170px;
-            height: 33px;
-            font-weight: 600;
-            background-color: rgba(6, 19, 45, 0.95);
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            color: #ffff;
-            font-size: 20px;
-            letter-spacing: 3px;
-            display: flex;
+
+        .foto-kandidat {
+            display:flex;
             justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 6px;
+            align-items: center;
+            margin-left: 25px;
+        }
+
+        .kolom-kiri {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .grup-teks{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            gap: 20px;
+        }
+
+        .teks{
+            color: rgba(255, 255, 255, 1);
+            -webkit-teks-stroke: rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 3px 3px rgba(6, 19, 45, 0.95);
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            alignment: left;
+            margin: 0;
+            flex: 1;
+        }
+
+        .kolom-kanan {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 2%;
+            max-width: 760px;
+        }
+
+        .grup-tombol{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 5%;
+            margin-top: 5%;
+        }
+
+        .bottom{
+            width: 175px;
+            height: auto;
+            background-color: rgba(6, 19, 45, 0.95);
+            color: rgb(255, 255, 255);
+            font-size: 26px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            text-align: center;
             text-decoration:none;
+        }
+        .container1{
+            position: fixed;
+            border: 1px solid white;
+            background-color: #05142B;
+            color: #ffff;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 5px solid;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            font-size:35px;
+            margin: 20px 5px;
+            top: 23%;
+            left: 50%;
+            bottom: 80px;
+            margin-top:20px;
+            margin-bottom: 26px;
+            transform: translateX(-50%);
             
         }
-      .tombol{
-            width: 170px;
-            height: 33px;
-            font-weight: 600;
-            background-color: rgba(6, 19, 45, 0.95);
-            border: 1px solid #ffff;
-            border-radius: 8px;
-            color: #ffff;
-            font-size: 20px;
-            letter-spacing: 3px;
-            display: flex;
+
+
+        .grup-tombol1 form{
+            display:flex;
             justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 6px;
+            align-items: center;
+            gap: 100px;
+            width: 100%;
+        }
+
+        .masuk {
+            text-decoration: none;
+            width: 140px;
+            height: auto;
+            background-color: rgba(6, 19, 45, 0.95);
+            color: rgb(255, 255, 255);
+            font-size: 28px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            padding: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
             text-decoration:none;
-            
         }
 
-        .tombol p {
-            display: flex; 
-            padding-bottom: 10px;
-        }
-
+        .masuk:hover{background-color: rgba(255, 255, 255, 0.10)}
+        
+       
     </style>
 </head>
 <body>
@@ -251,54 +311,30 @@
 
         <div class="border">
             <img src="logo.png" alt="logo">
-            <h5>maderazevot</h5>
+                <h5>maderazevot</h5>
             <img src="logoosis.png" alt="logo" class="logoosis">
         </div>
 
-        <div class="container-isi">
-        <div class="box-samping">
-            <a class="tombol-voting" href="halaman3.php">Voting</a>
-            <a class="tombol-hasil" href="hasil-votting.php">Hasil Voting</a>
-            <div class="nama"><p>hi ita!</p></div>
-            <a href="halaman1.php" class="logout" >Log Out</a>
+       <div class="container-isi">
+            <div class="box-samping">
+                <a class="tombol-voting" href="halaman3.php">Voting</a>
+                    <a class="tombol-voting" href="hasil-votting.php">Hasil Voting</a>
+                        <div class="nama-user"><p>hi ita!</p></div>
+                            <a class="logout" href="halaman1.php">Logout</a>
         </div>
 
-        <div style="flex-grow: 1;">
-            <p class="judul">Daftar Kandidat</p>
 
+        <div class="container1">
+                <p>Yakin dengan pilihan anda?
+                    Setelah klik Simpan pilihan
+                    anda tidak dapat diubah</P>
 
-        <div class="container-isi-kandidat">
-    <div class="isi-container"> 
-        <p class="angka">01</p>
-        <div class="container-kandidat">
-            <img src="foto.angga.png" alt="angga" class="foto-kandidat"></div>
-        <p class="nama-kandidat">ANGGA NAUFAL PRATAMA</p>
-
-        <a href="halaman-angga.php"
-        class="buttom">Lihat detail</a>
-    </div>
-
-    <div class="isi-container">
-        <p class="angka">02</p>
-        <div class="container-kandidat">
-            <img src="hilmi.png" alt="hilmi" class="foto-kandidat"></div>
-        <p class="nama-kandidat">HILMI HAIDAR RASYID</p>
-
-        <a href="halaman-hilmi.php"
-        class="buttom">Lihat detail</a>
-    </div>
-
-    <div class="isi-container">
-        <p class="angka">03</p>
-        <div class="container-kandidat">
-            <img src="fawwaz.png" alt="fawwaz" class="foto-kandidat"></div>
-        <p class="nama-kandidat">FAWWAZ MUBARAK</p>
-
-        <a href="halaman-fawwaz.php"
-        class="buttom">Lihat detail</a>
-    </div>
-
-        </div>
+                        <div class="grup-tombol1">
+                            <form action="aksi-pilihan.php" method="POST">
+                                <input type="hidden" name="aksi-pilihan" value="angga">
+                                        <a class="masuk" href="halaman3.php">Kembali</a>
+                            </form>
+                        </div>
     </div>
 </body>
 </html>

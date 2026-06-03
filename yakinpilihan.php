@@ -322,8 +322,8 @@
 
                         <div class="grup-tombol1">
                             <form action="aksi-pilihan.php" method="POST">
-                                <input type="hidden" name="aksi-pilihan" value="angga">
-                                    <button type="submit" class="masuk">Simpan</button>  
+                                <input type="hidden" name="akhir.php" value="angga">
+                                    <button type="submit" class="yakinpilihan.php">Simpan</button>  
                                         <a class="masuk" href="halaman3.php">Kembali</a>
                             </form>
                         </div>
